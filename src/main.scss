@@ -1,0 +1,28 @@
+@use './styleHelper/' as *;
+@use './components/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $mainFont;
+    height: 100vh;
+    background: linear-gradient(145deg, $blue1, $blue2, $blue3, $blue4);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button,
+input[type='submit']{
+    cursor: pointer;
+}

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+header {
+  height: 20vh;
+  display: flex;
+}
+header .ps-plus {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+header .ps-plus img {
+  height: 5rem;
+  width: auto;
+  padding: 0 2rem;
+}
+header .ps-plus .linkedin {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 50%;
+  background: white;
+}
+header .ps-plus .linkedin i {
+  font-size: 2.5rem;
+  color: #255792;
+}
+header .ps-plus .linkedin::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 1rem solid white;
+  bottom: 10%;
+  left: 80%;
+}
+header .pic-wrapper {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header .pic-wrapper .github {
+  padding: 0 8rem;
+}
+header .pic-wrapper .github i {
+  font-size: 3.5rem;
+  color: white;
+}
+header .pic-wrapper .pic {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: url("../pics/ich.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+header .pic-wrapper .pic::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(#36b4e6, 70%, white);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 120%;
+}
+header .pic-wrapper h5 {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  font-weight: 300;
+  color: white;
+}
+header .achievement {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header .achievement .trophy {
+  font-size: 3.5rem;
+  color: white;
+}
+header .achievement .star {
+  font-size: 2rem;
+  padding: 0 1rem;
+  color: #f3e141;
+}
+header .achievement p {
+  font-size: 1.5rem;
+  color: white;
+}
+header .clock {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 3.5rem;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  height: 100vh;
+  background: linear-gradient(145deg, #6b98cc, #255792, #112b5e, #001434);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

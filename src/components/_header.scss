@@ -1,0 +1,119 @@
+@use '../styleHelper/' as *;
+
+header{
+    height: 20vh;
+    display: flex;
+
+    .ps-plus{
+        width: 30%;
+        height: 100%;
+        @include flex(flex-start, center, row);
+
+        img{
+            height: 5rem;
+            width: auto;
+            padding: 0 2rem;
+        }
+
+        .linkedin{
+            width: 4rem;
+            height: 4rem;
+            position: relative;
+            @include flex(center, center, row);
+            border-radius: 50%;
+            background: white;
+
+            i{
+                font-size: 2.5rem;
+                color: $blue2;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 0.5rem solid transparent;
+                border-right: 0.5rem solid transparent;
+                border-bottom: 1rem solid white;
+                bottom: 10%;
+                left: 80%;
+            }
+        }
+    }
+
+    .pic-wrapper{
+        width: 30%;
+        height: 100%;
+        @include flex(center, center, row);
+
+        .github{
+            padding: 0 8rem;
+
+            i{
+                font-size: 3.5rem;
+                color: white;
+            }
+        }
+
+        .pic{
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-image: url('../pics/ich.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background: radial-gradient($circBlue, 70%, white);
+                top: 50%;
+                transform: translateY(-50%);
+                right: 120%;
+            }
+        }
+
+        h5{
+            font-size: 1.5rem;
+            padding: 0 2rem;
+            font-weight: 300;
+            color: white;
+        }
+    }
+
+    .achievement{
+        width: 20%;
+        height: 100%;
+        @include flex(center, center, row);
+
+        .trophy{
+            font-size: 3.5rem;
+            color: white;
+        }
+
+        .star{
+            font-size: 2rem;
+            padding: 0 1rem;
+            color: rgb(243, 225, 65);
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    .clock{
+        width: 20%;
+        height: 100%;
+        @include flex(center, center, row);
+        font-size: 3.5rem;
+        color: white;
+    }
+}
