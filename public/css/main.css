@@ -51,7 +51,7 @@ header .pic-wrapper {
   flex-direction: row;
 }
 header .pic-wrapper .github {
-  padding: 0 8rem;
+  margin: 0 8rem;
 }
 header .pic-wrapper .github i {
   font-size: 3.5rem;
@@ -81,7 +81,7 @@ header .pic-wrapper .pic::before {
 header .pic-wrapper h5 {
   font-size: 1.5rem;
   padding: 0 2rem;
-  font-weight: 300;
+  font-weight: 100;
   color: white;
 }
 header .achievement {
@@ -103,6 +103,7 @@ header .achievement .star {
 }
 header .achievement p {
   font-size: 1.5rem;
+  font-weight: 100;
   color: white;
 }
 header .clock {
@@ -112,8 +113,34 @@ header .clock {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  font-size: 3.5rem;
+}
+header .clock h6 {
+  font-size: 2rem;
+  font-weight: 100;
   color: white;
+}
+
+nav {
+  height: 40vh;
+  width: 100%;
+}
+nav ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+nav ul .cach {
+  width: 20rem;
+  height: 20rem;
+  border: solid white 2px;
+  transition: ease-in-out 0.3s;
+}
+nav ul .cach:hover {
+  width: 25rem;
+  height: 25rem;
 }
 
 * {
@@ -125,7 +152,9 @@ header .clock {
 body {
   font-family: "Mukta", sans-serif;
   height: 100vh;
+  min-width: 100vw;
   background: linear-gradient(145deg, #6b98cc, #255792, #112b5e, #001434);
+  overflow: hidden;
 }
 
 li {

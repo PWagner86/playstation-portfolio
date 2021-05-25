@@ -1,0 +1,26 @@
+@use '../styleHelper/' as *;
+
+nav{
+    height: 40vh;
+    width: 100%;
+    // overflow: auto;
+
+    ul{
+        height: 100%;
+        // width: 120%;
+        width: 100%;
+        @include flex(space-around, flex-start, row);
+
+        .cach{
+            width: 20rem;
+            height: 20rem;
+            border: solid white 2px;
+            transition: ease-in-out 0.3s;
+
+        &:hover{
+            width: 25rem;
+            height: 25rem;
+        }
+        }
+    }
+}
