@@ -12,13 +12,13 @@ header .ps-plus {
   flex-direction: row;
 }
 header .ps-plus img {
-  height: 5rem;
+  height: 8vmin;
   width: auto;
   padding: 0 2rem;
 }
 header .ps-plus .linkedin {
-  width: 4rem;
-  height: 4rem;
+  width: 8vmin;
+  height: 8vmin;
   position: relative;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ header .ps-plus .linkedin {
   background: white;
 }
 header .ps-plus .linkedin i {
-  font-size: 2.5rem;
+  font-size: 5vmin;
   color: #255792;
 }
 header .ps-plus .linkedin::after {
@@ -36,9 +36,9 @@ header .ps-plus .linkedin::after {
   position: absolute;
   width: 0;
   height: 0;
-  border-left: 0.5rem solid transparent;
-  border-right: 0.5rem solid transparent;
-  border-bottom: 1rem solid white;
+  border-left: 1vmin solid transparent;
+  border-right: 1vmin solid transparent;
+  border-bottom: 2vmin solid white;
   bottom: 10%;
   left: 80%;
 }
@@ -50,28 +50,26 @@ header .pic-wrapper {
   align-items: center;
   flex-direction: row;
 }
-header .pic-wrapper .github {
-  margin: 0 8rem;
-}
 header .pic-wrapper .github i {
-  font-size: 3.5rem;
+  font-size: 8vmin;
   color: white;
 }
 header .pic-wrapper .pic {
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 5vmin;
+  height: 5vmin;
   border-radius: 50%;
   background-image: url("../pics/ich.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-left: 4rem;
 }
 header .pic-wrapper .pic::before {
   content: "";
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 3vmin;
+  height: 3vmin;
   border-radius: 50%;
   background: radial-gradient(#36b4e6, 70%, white);
   top: 50%;
@@ -79,7 +77,7 @@ header .pic-wrapper .pic::before {
   right: 120%;
 }
 header .pic-wrapper h5 {
-  font-size: 1.5rem;
+  font-size: 3vmin;
   padding: 0 2rem;
   font-weight: 100;
   color: white;
@@ -93,16 +91,16 @@ header .achievement {
   flex-direction: row;
 }
 header .achievement .trophy {
-  font-size: 3.5rem;
+  font-size: 7vmin;
   color: white;
 }
 header .achievement .star {
-  font-size: 2rem;
+  font-size: 3vmin;
   padding: 0 1rem;
   color: #f3e141;
 }
 header .achievement p {
-  font-size: 1.5rem;
+  font-size: 3vmin;
   font-weight: 100;
   color: white;
 }
@@ -115,7 +113,7 @@ header .clock {
   flex-direction: row;
 }
 header .clock h6 {
-  font-size: 2rem;
+  font-size: 3vmin;
   font-weight: 100;
   color: white;
 }
@@ -133,14 +131,37 @@ nav ul {
   flex-direction: row;
 }
 nav ul .cach {
-  width: 20rem;
-  height: 20rem;
+  width: 30vmin;
+  height: 30vmin;
   border: solid white 2px;
   transition: ease-in-out 0.3s;
 }
+nav ul .cach h4 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 5vmin;
+  font-weight: 100;
+  color: white;
+}
+nav ul .cach .icon-wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+nav ul .cach .icon-wrapper i {
+  font-size: 10vmin;
+  color: white;
+}
 nav ul .cach:hover {
-  width: 25rem;
-  height: 25rem;
+  width: 35vmin;
+  height: 35vmin;
 }
 
 * {
@@ -159,6 +180,7 @@ body {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 a {
