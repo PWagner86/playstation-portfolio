@@ -35,16 +35,16 @@ export default class Project{
         </div>
         <div class="project-pics">
             <div class="project-pic prev-cach">
-                <img class="logo" src="../pics/${this.logo}" alt="project-logo">
+                <img class="logo" src="/pics/${this.logo}" alt="project-logo">
             </div>
             <div class="project-pic prev-cach">
-                <img src="../pics/${this.pic1}" alt="screenshot from project">
+                <img src="/pics/${this.pic1}" alt="screenshot from project">
             </div>
             <div class="project-pic prev-cach">
-                <img src="../pics/${this.pic2}" alt="screenshot from project">
+                <img src="/pics/${this.pic2}" alt="screenshot from project">
             </div>
             <div class="project-pic prev-cach">
-                <img src="../pics/${this.pic3}" alt="screenshot from project">
+                <img src="/pics/${this.pic3}" alt="screenshot from project">
             </div>
         </div>
         `;
