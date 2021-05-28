@@ -119,7 +119,7 @@ header .clock h6 {
 }
 
 nav {
-  height: 40vh;
+  height: 20vh;
   width: 100%;
 }
 nav ul {
@@ -131,8 +131,8 @@ nav ul {
   flex-direction: row;
 }
 nav ul .cach {
-  width: 30vmin;
-  height: 30vmin;
+  width: 15vmin;
+  height: 15vmin;
   border: solid white 2px;
   transition: ease-in-out 0.3s;
 }
@@ -143,7 +143,7 @@ nav ul .cach h4 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-weight: 100;
   color: white;
 }
@@ -156,12 +156,94 @@ nav ul .cach .icon-wrapper {
   flex-direction: row;
 }
 nav ul .cach .icon-wrapper i {
-  font-size: 10vmin;
+  font-size: 7vmin;
   color: white;
 }
 nav ul .cach:hover {
-  width: 35vmin;
-  height: 35vmin;
+  width: 20vmin;
+  height: 20vmin;
+}
+
+.preview {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.preview h4 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 6vmin;
+  font-weight: 300;
+  color: white;
+}
+.preview .prev-cach {
+  width: 25vmin;
+  height: 25vmin;
+  background: rgba(0, 0, 0, 0.527);
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0.5rem;
+}
+
+.skills-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-wrapper .upper,
+.skills-wrapper .lower {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.skills-wrapper .upper .prev-cach img,
+.skills-wrapper .lower .prev-cach img {
+  width: 100%;
+  height: auto;
+}
+.skills-wrapper .upper .css {
+  background: #1194cc;
+}
+
+.contact-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-wrapper .ct-wrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.contact-wrapper .ct-wrapper .mail {
+  width: 60vmin;
+  height: 40vmin;
+}
+.contact-wrapper .ct-wrapper .phone {
+  width: 40vmin;
+  height: 40vmin;
+}
+.contact-wrapper .ct-wrapper a {
+  font-size: 4vmin;
+  color: white;
+  font-weight: 100;
 }
 
 * {

@@ -1,0 +1,30 @@
+@use '../styleHelper/' as *;
+
+.skills-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .upper,
+    .lower{
+        width: 100%;
+        height: 45%;
+        @include flex(center, center, row);
+
+        .prev-cach{
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .upper{
+
+        .css{
+            background: #1194cc;
+        }
+    }
+}

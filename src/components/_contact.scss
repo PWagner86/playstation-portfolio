@@ -1,0 +1,30 @@
+@use '../styleHelper/' as *;
+
+.contact-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .ct-wrapper{
+        width: 100%;
+        height: 90%;
+        @include flex(center, center, row);
+
+        .mail{
+            width: 60vmin;
+            height: 40vmin;
+        }
+
+        .phone{
+            width: 40vmin;
+            height: 40vmin;
+        }
+
+        a{
+            font-size: 4vmin;
+            color: white;
+            font-weight: 100;
+        }
+    }
+}

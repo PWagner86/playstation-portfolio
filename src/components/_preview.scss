@@ -1,0 +1,24 @@
+@use '../styleHelper/' as *;
+
+.preview{
+    height: 60vh;
+    @include flex(center, center, row);
+
+    h4{
+        width: 100%;
+        height: 10%;
+        @include flex(center, center, row);
+        font-size: 6vmin;
+        font-weight: 300;
+        color: white;
+    }
+
+    .prev-cach{
+        width: 25vmin;
+        height: 25vmin;
+        background: rgba(0, 0, 0, 0.527);
+        box-shadow: 0 0 10px black;
+        @include flex(center, center, row);
+        margin: 0 0.5rem;
+    }
+}
