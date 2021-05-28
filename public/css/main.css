@@ -135,11 +135,16 @@ nav ul {
 nav ul .cach {
   width: 15vmin;
   height: 15vmin;
-  background: linear-gradient(to bottom, #112b5e, #001434);
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
   margin: 0 0.5rem;
 }
-nav ul .cach h4 {
+nav ul .cach .inner-cach {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #112b5e, #001434);
+  transition: ease-in-out 0.1s;
+}
+nav ul .cach .inner-cach h4 {
   width: 100%;
   height: 40%;
   display: flex;
@@ -150,7 +155,7 @@ nav ul .cach h4 {
   font-weight: 100;
   color: white;
 }
-nav ul .cach .icon-wrapper {
+nav ul .cach .inner-cach .icon-wrapper {
   width: 100%;
   height: 60%;
   display: flex;
@@ -158,13 +163,63 @@ nav ul .cach .icon-wrapper {
   align-items: center;
   flex-direction: row;
 }
-nav ul .cach .icon-wrapper i {
+nav ul .cach .inner-cach .icon-wrapper i {
   font-size: 7vmin;
+  color: white;
+}
+nav ul .cach .arrow {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.103);
+}
+nav ul .cach .arrow i {
+  font-size: 3vmin;
   color: white;
 }
 nav ul .cach:hover {
   width: 20vmin;
   height: 20vmin;
+  border: solid white 3px;
+}
+nav ul .cach:hover .inner-cach {
+  height: 80%;
+}
+nav ul .cach:hover .arrow {
+  display: flex;
+}
+nav ul .dashboard .inner-cach,
+nav ul .visualizer .inner-cach,
+nav ul .banner .inner-cach {
+  position: relative;
+}
+nav ul .dashboard .inner-cach h4,
+nav ul .visualizer .inner-cach h4,
+nav ul .banner .inner-cach h4 {
+  font-size: 2vmin;
+  text-align: center;
+}
+nav ul .dashboard .inner-cach .pic-container,
+nav ul .visualizer .inner-cach .pic-container,
+nav ul .banner .inner-cach .pic-container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+nav ul .dashboard .inner-cach .pic-container img,
+nav ul .visualizer .inner-cach .pic-container img,
+nav ul .banner .inner-cach .pic-container img {
+  width: auto;
+  height: 80%;
+}
+nav ul .dashboard .inner-cach .pic-container img {
+  width: 90%;
+  height: auto;
 }
 
 .preview {
@@ -261,6 +316,59 @@ nav ul .cach:hover {
 }
 .canvas-wrapper #canvas {
   position: absolute;
+}
+
+.project-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-wrapper .description {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.project-wrapper .description p {
+  font-size: 2.7vmin;
+  color: white;
+  font-weight: 100;
+}
+.project-wrapper .description a {
+  color: white;
+  font-size: 4vmin;
+  font-weight: 900;
+}
+.project-wrapper .project-pics {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project-wrapper .project-pics .project-pic {
+  width: 45%;
+  height: 45%;
+  margin: 0;
+  transition: ease-in-out 0.1s;
+}
+.project-wrapper .project-pics .project-pic img {
+  width: 90%;
+  height: auto;
+}
+.project-wrapper .project-pics .project-pic .logo {
+  width: 60%;
+  height: auto;
+}
+.project-wrapper .project-pics .project-pic:hover {
+  border: solid white 3px;
+  width: 55%;
+  height: 55%;
 }
 
 * {

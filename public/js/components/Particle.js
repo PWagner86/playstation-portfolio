@@ -29,7 +29,7 @@ export default class Particle{
 
     show(){
         this.ctx.beginPath();
-        this.ctx.arc(this.x, this.y, Math.floor((Math.random() + 1) * 3) , 0, 2 * Math.PI);
+        this.ctx.arc(this.x, this.y, Math.floor((Math.random() + 0.1) * 5) , 0, 2 * Math.PI);
         this.ctx.fillStyle = this.particleColor;
         this.ctx.fill();
     }

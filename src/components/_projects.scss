@@ -1,0 +1,56 @@
+@use '../styleHelper/' as *;
+
+.project-wrapper{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+   .description{
+       width: 50%;
+       height: 90%;
+       @include flex(space-around, center, column);
+
+       p{
+           font-size: 2.7vmin;
+           color: white;
+           font-weight: 100;
+       }
+
+       a{
+           color: white;
+           font-size: 4vmin;
+           font-weight: 900;
+       }
+   }
+
+   .project-pics{
+       width: 50%;
+       height: 90%;
+       @include flex(space-around, center, row);
+       flex-wrap: wrap;
+
+       .project-pic{
+           width: 45%;
+           height: 45%;
+           margin: 0;
+           transition: ease-in-out 0.1s;
+
+           img{
+               width: 90%;
+               height: auto;
+           }
+
+           .logo{
+               width: 60%;
+               height: auto;
+           }
+
+           &:hover{
+               border: solid white 3px;
+               width: 55%;
+               height: 55%;
+           }
+       }
+   }
+}
