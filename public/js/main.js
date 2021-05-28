@@ -25,7 +25,7 @@ const contact = new Contact(preview);
 
 const dashBtn = document.querySelector('.dashboard');
 const dashDescription = 'Der Benutzer kann sich registrieren und einloggen. Sobald man eingeloggt ist, kommt man auf sein Dashboard. Dort hat man verschiedene Optionen zur Auswahl. Man kann Farbschema, Layout, Destination, usw. ändern. Die Änderungen werden in einer Datenbank gespeichert. Im Dashboard werden Wetterdaten sowie Newsartikel mit einem AJAX Request geladen. Beide Requests werden nach einer gewissen Zeit neu versendet um auf dem aktuellen Stand zu bleiben.'
-const dashboard = new Project(preview, 'Create your Dashboard', dashDescription, 'https://github.com/PWagner86/create_your_dashboard', 'Github-Repo', 'dashboard.jpg', 'dashpic1.jpg', 'dashpic2.jpg', 'dashpic3.jpg');
+const dashboard = new Project(preview, 'Create your Dashboard', dashDescription, 'https://github.com/PWagner86/create_your_dashboard', 'Github-Repo', 'dashboard.png', 'dashpic1.jpg', 'dashpic2.jpg', 'dashpic3.jpg');
 
 const visBtn = document.querySelector('.visualizer');
 const visDescription = 'Livingroom Visualizer is a schoolproject about a CMS written in PHP, mySQL, JavaScript, HTML and SASS. The goal is that the admin can add, delete and update news to the site and check the amount of registered users and their informations. As a loged in user, you can use the visualizer. This is a 3D environment build in three.js where you can load different furniture in a room, move and rotate them and create your virtual livingroom.'
