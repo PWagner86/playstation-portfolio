@@ -63,6 +63,7 @@ function canvasResizing(){
     redrawParticles();
 };
 
+// Create Particles
 function redrawParticles(){
     ctx.clearRect(0, 0, cWidth, cHeigth);
     particles.forEach(particle => particle.show());
