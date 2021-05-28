@@ -4,18 +4,20 @@ nav{
     height: 20vh;
     width: 100%;
     // overflow: auto;
+    z-index: 1;
 
     ul{
         height: 100%;
         // width: 120%;
         width: 100%;
-        @include flex(space-around, flex-start, row);
+        @include flex(center, flex-start, row);
 
         .cach{
             width: 15vmin;
             height: 15vmin;
-            border: solid white 2px;
+            background: linear-gradient(to bottom, $blue3, $blue4);
             transition: ease-in-out 0.3s;
+            margin: 0 0.5rem;
 
             h4{
                 width: 100%;

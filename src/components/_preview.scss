@@ -2,6 +2,7 @@
 
 .preview{
     height: 60vh;
+    z-index: 1;
     @include flex(center, center, row);
 
     h4{
