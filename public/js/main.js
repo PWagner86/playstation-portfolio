@@ -13,9 +13,14 @@ const ctx = c.getContext('2d', { alpha: true });
 const particles = [];
 
 const preview = document.querySelector('.preview');
+const psPlusMobileBtn = document.querySelector('.mobile-ps-plus img');
+const mobileNav = document.querySelector('.mobile-nav');
+let active = false;
 
 const clockContainer = document.querySelector('.clock h6');
+const mobileClockContainer = document.querySelector('.mobile-clock');
 const clock = new Clock(clockContainer);
+const mobileClock = new Clock(mobileClockContainer);
 
 const skillsBtn = document.querySelector('.skills');
 const skills = new Skills(preview);
@@ -37,6 +42,17 @@ const banner = new Project(preview, 'AXA Banneranimation', bannerDescription, 'h
 
 
 // Events
+
+psPlusMobileBtn.addEventListener('click', () => {
+    if(active === false){
+        mobileNav.style.left = '0';
+        active = true;
+    }else{
+        mobileNav.style.left = '-50%';
+        active = false;
+    }
+})
+
 for(let i = 0; i < 200; i++){
     particles[i] = new Particle(ctx, cWidth, cHeigth);
 };

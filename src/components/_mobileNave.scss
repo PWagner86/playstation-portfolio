@@ -1,0 +1,46 @@
+@use '../styleHelper/' as *;
+
+.mobile-nav{
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to top, $blue1, $blue4);
+    transition: ease-in-out 0.3s;
+
+    ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        li{
+            width: 100%;
+            height: 25%;
+            font-size: 4vmin;
+            color: white;
+
+            a{
+                color: white;
+                width: 100%;
+                height: 100%;
+                @include flex(flex-start, center, row);
+
+                i{
+                    padding: 0 2rem;
+                }
+
+                &:hover{
+                    color: $blue4;
+                    background: white;
+                }    
+            }
+        }
+
+        .mobile-clock{
+            @include flex(flex-start, center, row);
+            cursor: default;
+            padding: 0 2rem;
+        }
+    }
+}
