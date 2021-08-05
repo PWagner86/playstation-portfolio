@@ -295,7 +295,7 @@ nav ul .dashboard .inner-cach .pic-container img {
 }
 
 .preview {
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
   z-index: 1;
   display: flex;
@@ -392,8 +392,8 @@ nav ul .dashboard .inner-cach .pic-container img {
 }
 
 .project-wrapper {
-  max-width: 1560px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -453,6 +453,14 @@ nav ul .dashboard .inner-cach .pic-container img {
 .project-wrapper .project-pics {
     width: 100%;
     height: 45%;
+  }
+  .project-wrapper .project-pics .project-pic img {
+    height: 90%;
+    width: auto;
+  }
+  .project-wrapper .project-pics .project-pic .logo {
+    height: 60%;
+    width: auto;
   }
 }
 * {
