@@ -32,15 +32,16 @@ export default class Skills{
             <div class="prev-cach node">
                 <img src="../pics/node.png" alt="node-logo">
             </div>
-            <div class="prev-cach angular">
-                <img src="../pics/angular.png" alt="angular-logo">
-            </div>
             <div class="prev-cach php">
                 <img src="../pics/php.svg" alt="php-logo">
             </div>
             <div class="prev-cach sql">
                 <img src="../pics/mysql.svg" alt="mysql-logo">
             </div>
+            <div class="prev-cach sql">
+                <img src="../pics/react.svg" alt="mysql-logo">
+            </div>
+
         </div>
         `;
         div.innerHTML = template;
