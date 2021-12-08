@@ -40,6 +40,9 @@ const bannerBtn = document.querySelector('.banner');
 const bannerDescription = 'Eine Banneranimation welche mit GSAP und Howler.js gemacht wurde. (nicht responsiv)';
 const banner = new Project(preview, 'AXA Banneranimation', bannerDescription, 'https://pwagner86.github.io/banner_animation_axa/', 'Zur Animation', 'axa_logo.png', 'bannerpic1.png', 'bannerpic2.png', 'bannerpic3.png');
 
+const wichtelBtn = document.querySelector('.wichtel');
+const wichtelDescription = 'Eine Wichtel-App für die Weihnachtszeit, um zufällig auszuwählen wer wem was schenkt';
+const wichtelApp = new Project(preview, 'Wichtel-App', wichtelDescription, 'https://pwagner86.github.io/wichtel_app/', 'Zur App', 'wichteln.jpg', 'wichteln1.jpg', 'wichteln2.jpg', 'wichteln3.jpg');
 
 // Events
 
@@ -64,6 +67,7 @@ contactBtn.addEventListener('click', () => showContent(contact));
 dashBtn.addEventListener('click', () => showContent(dashboard));
 visBtn.addEventListener('click', () => showContent(visualizer));
 bannerBtn.addEventListener('click', () => showContent(banner));
+wichtelBtn.addEventListener('click', () => showContent(wichtelApp))
 
 canvasResizing();
 

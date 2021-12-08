@@ -264,18 +264,21 @@ nav ul .cach:hover .arrow {
 }
 nav ul .dashboard .inner-cach,
 nav ul .visualizer .inner-cach,
-nav ul .banner .inner-cach {
+nav ul .banner .inner-cach,
+nav ul .wichtel .inner-cach {
   position: relative;
 }
 nav ul .dashboard .inner-cach h4,
 nav ul .visualizer .inner-cach h4,
-nav ul .banner .inner-cach h4 {
+nav ul .banner .inner-cach h4,
+nav ul .wichtel .inner-cach h4 {
   font-size: 2vmin;
   text-align: center;
 }
 nav ul .dashboard .inner-cach .pic-container,
 nav ul .visualizer .inner-cach .pic-container,
-nav ul .banner .inner-cach .pic-container {
+nav ul .banner .inner-cach .pic-container,
+nav ul .wichtel .inner-cach .pic-container {
   height: 60%;
   width: 100%;
   display: flex;
@@ -285,11 +288,13 @@ nav ul .banner .inner-cach .pic-container {
 }
 nav ul .dashboard .inner-cach .pic-container img,
 nav ul .visualizer .inner-cach .pic-container img,
-nav ul .banner .inner-cach .pic-container img {
+nav ul .banner .inner-cach .pic-container img,
+nav ul .wichtel .inner-cach .pic-container img {
   width: auto;
   height: 80%;
 }
-nav ul .dashboard .inner-cach .pic-container img {
+nav ul .dashboard .inner-cach .pic-container img,
+nav ul .wichtel .inner-cach .pic-container img {
   width: 90%;
   height: auto;
 }
