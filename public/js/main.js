@@ -46,7 +46,7 @@ const wichtelApp = new Project(preview, 'Wichtel-App', wichtelDescription, 'http
 
 const threeBtn = document.querySelector('.three');
 const threeDescription = 'Ein virtuelles Wohnzimmer erstellt in three.js';
-const threeApp = new Project(preview, 'Three.JS Livingroom', wichtelDescription, 'https://livingroom-visualizer.herokuapp.com/', 'Zur Visualisierung', 'three.png', 'three1.png', 'three2.png', 'three3.png');
+const threeApp = new Project(preview, 'Three.JS Livingroom', threeDescription, 'https://livingroom-visualizer.herokuapp.com/', 'Zur Visualisierung', 'three.jpg', 'three1.jpg', 'three2.jpg', 'three3.jpg');
 
 // Events
 
