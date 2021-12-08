@@ -44,10 +44,14 @@ const wichtelBtn = document.querySelector('.wichtel');
 const wichtelDescription = 'Eine Wichtel-App für die Weihnachtszeit, um zufällig auszuwählen wer wem was schenkt';
 const wichtelApp = new Project(preview, 'Wichtel-App', wichtelDescription, 'https://pwagner86.github.io/wichtel_app/', 'Zur App', 'wichteln.png', 'wichteln1.png', 'wichteln2.png', 'wichteln3.png');
 
+const threeBtn = document.querySelector('.three');
+const threeDescription = 'Ein virtuelles Wohnzimmer erstellt in three.js';
+const three = new Project(preview, 'Three.JS Livingroom', wichtelDescription, 'https://livingroom-visualizer.herokuapp.com/', 'Zur Visualisierung', 'three.png', 'three1.png', 'three2.png', 'three3.png');
+
 // Events
 
 psPlusMobileBtn.addEventListener('click', () => {
-    if(active === false){
+    if(!active){
         mobileNav.style.left = '0';
         active = true;
     }else{
@@ -67,7 +71,8 @@ contactBtn.addEventListener('click', () => showContent(contact));
 dashBtn.addEventListener('click', () => showContent(dashboard));
 visBtn.addEventListener('click', () => showContent(visualizer));
 bannerBtn.addEventListener('click', () => showContent(banner));
-wichtelBtn.addEventListener('click', () => showContent(wichtelApp))
+wichtelBtn.addEventListener('click', () => showContent(wichtelApp));
+threeBtn.addEventListener('click', () => showContent(three));
 
 canvasResizing();
 
