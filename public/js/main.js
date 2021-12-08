@@ -42,7 +42,7 @@ const banner = new Project(preview, 'AXA Banneranimation', bannerDescription, 'h
 
 const wichtelBtn = document.querySelector('.wichtel');
 const wichtelDescription = 'Eine Wichtel-App für die Weihnachtszeit, um zufällig auszuwählen wer wem was schenkt';
-const wichtelApp = new Project(preview, 'Wichtel-App', wichtelDescription, 'https://pwagner86.github.io/wichtel_app/', 'Zur App', 'wichteln.jpg', 'wichteln1.jpg', 'wichteln2.jpg', 'wichteln3.jpg');
+const wichtelApp = new Project(preview, 'Wichtel-App', wichtelDescription, 'https://pwagner86.github.io/wichtel_app/', 'Zur App', 'wichteln.png', 'wichteln1.png', 'wichteln2.png', 'wichteln3.png');
 
 // Events
 
