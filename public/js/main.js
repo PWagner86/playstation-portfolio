@@ -12,6 +12,8 @@ const cHeigth = cWrapper.clientHeight;
 const ctx = c.getContext('2d', { alpha: true });
 const particles = [];
 
+const startTitle = document.querySelector('.start-title');
+
 const preview = document.querySelector('.preview');
 const psPlusMobileBtn = document.querySelector('.mobile-ps-plus img');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -94,3 +96,17 @@ function redrawParticles(){
     particles.forEach(particle => particle.show());
     particles.forEach(particle => particle.float());
 }
+
+// Start Title blend out
+setTimeout(() => {
+    startTitle.classList.add('gone');
+}, 3000);
+
+// App blend in
+setTimeout(() => {
+    const header = document.querySelector('header');
+    const nav = document.querySelector('.main-nav');
+    header.classList.remove('gone');
+    nav.classList.remove('gone');
+    startTitle.style.display = 'none';
+}, 4500);

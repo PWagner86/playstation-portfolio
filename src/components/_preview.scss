@@ -5,6 +5,7 @@
     width: 100vw;
     z-index: 1;
     @include flex(center, center, row);
+    transition: ease-in-out 0.5s;
 
     h4{
         width: 100%;

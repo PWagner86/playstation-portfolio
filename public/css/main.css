@@ -3,6 +3,7 @@ header {
   height: 20vh;
   display: flex;
   z-index: 1;
+  transition: ease-in-out 2s;
 }
 header .ps-plus {
   width: 30%;
@@ -195,6 +196,7 @@ nav {
   height: 20vh;
   width: 100%;
   z-index: 1;
+  transition: ease-in-out 2s;
 }
 nav ul {
   height: 100%;
@@ -312,6 +314,7 @@ nav ul .three .inner-cach .pic-container img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  transition: ease-in-out 0.5s;
 }
 .preview h4 {
   width: 100%;
@@ -490,6 +493,21 @@ a {
 button,
 input[type=submit] {
   cursor: pointer;
+}
+
+.start-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10vmin;
+  transition: ease-in-out 0.5s;
+}
+
+.gone {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=main.css.map */

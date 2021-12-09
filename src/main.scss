@@ -29,3 +29,19 @@ button,
 input[type='submit']{
     cursor: pointer;
 }
+
+.start-title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10vmin;
+    transition: ease-in-out 0.5s;
+
+}
+
+.gone{
+    opacity: 0;
+    pointer-events: none;
+}
