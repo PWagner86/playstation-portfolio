@@ -265,6 +265,7 @@ nav ul .cach:hover .arrow {
   display: flex;
 }
 nav ul .dashboard .inner-cach,
+nav ul .dino .inner-cach,
 nav ul .visualizer .inner-cach,
 nav ul .banner .inner-cach,
 nav ul .wichtel .inner-cach,
@@ -272,6 +273,7 @@ nav ul .three .inner-cach {
   position: relative;
 }
 nav ul .dashboard .inner-cach h4,
+nav ul .dino .inner-cach h4,
 nav ul .visualizer .inner-cach h4,
 nav ul .banner .inner-cach h4,
 nav ul .wichtel .inner-cach h4,
@@ -280,6 +282,7 @@ nav ul .three .inner-cach h4 {
   text-align: center;
 }
 nav ul .dashboard .inner-cach .pic-container,
+nav ul .dino .inner-cach .pic-container,
 nav ul .visualizer .inner-cach .pic-container,
 nav ul .banner .inner-cach .pic-container,
 nav ul .wichtel .inner-cach .pic-container,
@@ -292,6 +295,7 @@ nav ul .three .inner-cach .pic-container {
   flex-direction: row;
 }
 nav ul .dashboard .inner-cach .pic-container img,
+nav ul .dino .inner-cach .pic-container img,
 nav ul .visualizer .inner-cach .pic-container img,
 nav ul .banner .inner-cach .pic-container img,
 nav ul .wichtel .inner-cach .pic-container img,
