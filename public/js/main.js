@@ -36,7 +36,7 @@ const dashboard = new Project(preview, 'Create your Dashboard', dashDescription,
 
 const dinoBtn = document.querySelector('.dino');
 const dinoDescription = 'Eine 3D Simulation von verschiedenen Dinos, welche durchs Land laufen.'
-const dinoApp = new Project(preview, 'Dino Game', dinoDescription, 'https://pwagner86.github.io/dino_game/', 'Zur den Dinos', 'dino1.png', 'dino2.png', 'dino3.png', 'dino4.png');
+const dinoApp = new Project(preview, 'Dino Game', dinoDescription, 'https://pwagner86.github.io/dino_game/', 'Zu den Dinos', 'dino1.png', 'dino2.png', 'dino3.png', 'dino4.png');
 
 const visBtn = document.querySelector('.visualizer');
 const visDescription = 'Livingroom Visualizer is a schoolproject about a CMS written in PHP, mySQL, JavaScript, HTML and SASS. The goal is that the admin can add, delete and update news to the site and check the amount of registered users and their informations. As a loged in user, you can use the visualizer. This is a 3D environment build in three.js where you can load different furniture in a room, move and rotate them and create your virtual livingroom.'
