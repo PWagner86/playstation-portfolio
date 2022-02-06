@@ -31,8 +31,8 @@ const contactBtn = document.querySelector('.contact');
 const contact = new Contact(preview);
 
 const dashBtn = document.querySelector('.dashboard');
-const dashDescription = 'Der Benutzer kann sich registrieren und einloggen. Sobald man eingeloggt ist, kommt man auf sein Dashboard. Dort hat man verschiedene Optionen zur Auswahl. Man kann Farbschema, Layout, Destination, usw. ändern. Die Änderungen werden in einer Datenbank gespeichert. Im Dashboard werden Wetterdaten sowie Newsartikel mit einem AJAX Request geladen. Beide Requests werden nach einer gewissen Zeit neu versendet um auf dem aktuellen Stand zu bleiben.'
-const dashboard = new Project(preview, 'Create your Dashboard', dashDescription, 'https://github.com/PWagner86/create_your_dashboard', 'Github-Repo', 'dashboard.png', 'dashpic1.png', 'dashpic2.png', 'dashpic3.png');
+const dashDescription = 'Der Benutzer kann sich registrieren und einloggen. Sobald man eingeloggt ist, kommt man auf sein Dashboard. Dort hat man verschiedene Optionen zur Auswahl. Man kann Farbschema, Layout, Destination, usw. ändern. Die Änderungen werden in einer Datenbank gespeichert. Im Dashboard werden Wetterdaten sowie Newsartikel mit einem AJAX Request geladen. Beide Requests werden nach einer gewissen Zeit neu versendet um auf dem aktuellen Stand zu bleiben.  (News Api funktioniert nicht, da ich die Gratisversion benutze und diese nur für Development funktioniert.)'
+const dashboard = new Project(preview, 'Create your Dashboard', dashDescription, 'https://create-your-dashboard.herokuapp.com/', 'Zur App', 'dashboard.png', 'dashpic1.png', 'dashpic2.png', 'dashpic3.png');
 
 const dinoBtn = document.querySelector('.dino');
 const dinoDescription = 'Eine 3D Simulation von verschiedenen Dinos, welche durchs Land laufen.'
